@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <!--Navbar Logo position Left-->
+      <div class="position-left">
+        <div class="logo-img"></div>
+        <div class="logo-cap">Angular JS</div>
+      </div>
+      <!-- Hamburger Menu -->
+      <label for="checkbox">
+       <div onclick="rotate()" class="hamburger">
+          <span id="1"></span>
+          <span id="2"></span>
+          <span id="3"></span>
+        </div>
+      </label>
+      <!--Navbar Menu position Right-->
+    <input type="checkbox" id="checkbox" />
+    
+      <div class="position-right">
+        <div class="nav-ele home">Home</div>
+        <div class="nav-ele about">About</div>
+        <div class="nav-ele services">Service</div>
+        <div class="nav-ele goals">Goals</div>
+        <div class="nav-ele contactus">Contact Us</div>
+      </div>
+      <!--Checkbox Toogle-->
+    </div>
+  </header>
+  <script src="main.js"></script>
+</body>
+
+</html>

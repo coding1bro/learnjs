@@ -1,0 +1,29 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #E5E7FF;
+  font-family: 'Courier New', Courier, monospace;
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+h2{
+  text-align: center;
+  padding: 8px;
+  color: #8A65FF;
+  font-weight: 900;
+}
+div{
+  background: white;
+  box-shadow: 2px 0px 10px -5px black;
+  border: 1px solid #4F5EFF;
+  width: 80vw;
+  height: 80vw;
+  padding: 8px;
+  text-align: center;
+  display: inline-block;
+  border-radius :5px;
+  margin :10vw;
+}

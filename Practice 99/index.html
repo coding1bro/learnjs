@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="bghex" onclick="randomClr()">
+  <div id="wrap">
+  <div id="sixVal"></div>
+  <div id="advice">Tap Anywhere On A Screen To Generate Color</div>
+  </div>
+</div>
+  <script src="main.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    document.addEventListener('DOMContentLoaded', randomClr());
+
+function randomClr() {
+  let letterAndNum = "ABCDEF1234567890";
+  let hexVal = '#';
+
+  function hex(hexNum) {
+    for (var i = 0; i < hexNum; i++) {
+      let val = letterAndNum.charAt(Math.floor(
+        Math.random() * 10 + 1));
+      hexVal += val;
+    }
+  }
+  hex(6);
+  document.querySelector('#bghex').style.backgroundColor = hexVal;
+  document.querySelector('#sixVal').innerText = hexVal;
+}
+  </script>
+</body>
+
+</html>

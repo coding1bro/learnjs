@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Josefin+Sans:wght@300;400;500&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@200;500;600&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #F5F6FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border1-box;
+}
+
+/*  ------- Default CSS End ------ */
+
+/*  ------- Default Navbar CSS ------- */
+.navbar {
+  height: 60px;
+  background: #000000;
+  font-family: Josefin sans;
+  font-weight: 500;
+}
+
+#checkbox {
+  position: absolute;
+  top: 0;
+}
+
+.position-left {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 200px;
+  position: relative;
+  left: 20px;
+}
+
+.logo-img {
+  background: url(angular-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%;
+  width: 60px;
+}
+
+.logo-cap {
+  width: 140px;
+  font-size: 1.5rem;
+  color: white;
+  line-height: 60px;
+}
+
+.position-right {
+  position: absolute;
+  right: 0px;
+  display: flex;
+}
+
+.nav-ele {
+  color: white;
+  line-height: 60px;
+  height: 60px;
+  color: white !important;
+  font-size: 1.3rem;
+}
+
+/* -------- Default Navbar CSS Ends --------*/
+
+
+/*---------Mobile Screen Start---------------*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .navbar {
+    height: 50px;
+  }
+
+  .position-left {
+    width: 160px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 5px;
+  }
+
+  .logo-img {
+    background-size: 80%;
+    width: 50px;
+  }
+
+  .logo-cap {
+    width: 110px;
+    font-size: 1.2rem;
+    line-height: 50px;
+  }
+
+  .position-right {
+    flex-direction: column;
+    background: #000000BA;
+    width: 100%; 
+    height: calC(100vh - 50px);
+    text-align: center;
+    transition: all .3s;
+    position: absolute;
+    left: -200px;
+    opacity: 0;
+  }
+
+  #checkbox:checked+.position-right {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+/*------------Mobile Screen End--------------*/
+/*---------------*/
+span {
+  background: white;
+  height: 3px;
+  width: 30px;
+  display: block;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all 0.5s;
+}
+
+#checkbox {
+  visibility: hidden;
+}
+#1{
+  transform: rotate(45deg);
+}

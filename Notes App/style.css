@@ -1,0 +1,12 @@
+body {
+    font-size: 15pt;
+}
+@media(max-width: 576px) {
+.card-text{
+  font-size: 0.8em;
+}
+
+}
+.div{
+  background:#FFF5F5;
+}

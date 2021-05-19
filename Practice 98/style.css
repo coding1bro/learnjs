@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&family=Quicksand:wght@500&family=Raleway&display=swap');
+body{
+  width:100vw;
+}
+*{
+  margin: 0 0 0 0;
+  padding: 0;
+  box-sizing : border-box;
+}
+.wrapper{
+  background: #2c3e50;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+.setup{
+  background:white;
+  width: 390px;
+  height: 550px;
+  border-radius:20px;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 390px;
+  grid-template-rows: 100px 360px 90px;
+}
+.header{
+  background:#9ECFB0/*#F8F8F8*/;
+  display: grid;
+  grid-template-columns: 200px 160px;
+  font-family: Montserrat;
+  position:relative ;
+  bottom: 10px;
+}
+.header_1{
+  position:relative ;
+  left:10px;
+}
+.header_2{
+  position:relative ;
+  left:20px;
+}
+.cheader{
+  background: #2E9C55 /* #DDBAEC #C4C4C4*/;
+  border-radius:20px;
+  height:40px;
+  text-align: center;
+  line-height : 40px;
+  margin: 5px;
+  position:relative ;
+  top: 25px;
+  color:#FFFFFF;
+}
+.quiz{
+  background:white;
+  display:grid;
+  grid-template-rows:100px repeat(5,50px);
+  grid-template-columns: 370px;
+  position:relative ;
+  top:5px;
+}
+.opt,.opt5,.que{
+  border-radius: 20px;
+  margin: 5px;
+  text-align:center;
+  background:rgba(2,117,216,0.16);
+  color: rgb(2,117,216);
+  font-weight:700 !important;
+  letter-spacing:1px ;
+  line-height:40px;
+  font-family:raleway ;
+  position:relative ;
+  left:10px;
+}
+.opt:hover{
+  transform: scale(1.03);
+  transition: all 0.3s;
+  border: 1px solid rgb(2,117,216);
+}
+
+.que{
+  border:none ;
+  padding:15px;
+  font-weight:500;
+  line-height: 20px !important;
+  font-family:montserrat;
+  font-size :16.5px;
+  background: #EFE0CA;
+  color:#FF9405  /* #E1992C*/;
+  text-align:left;
+  display:grid;
+  grid-template-columns:20px 320px;
+}
+.footer{
+  background:#9ECFB0;
+  display:grid;
+  grid-template-columns:200px 160px;
+  position: relative;
+  font-family:montserrat ;
+}
+.foo{
+  background:#2E9C55;
+  border-radius:20px;
+  height:40px;
+  text-align:center;
+  line-height:40px;
+  color:#FFF;
+  font-weight: 500;
+  position:relative ;
+  top:25px;
+}
+.footer_1{
+  position:relative ;
+  left:10px;
+}
+.footer_2 {
+  position: relative;
+  left:20px;
+}
+.footer_2:hover{
+  transform: scale(1.03);
+  transition: all 0.1s;
+}
+.opt5{
+  background:none;
+}
+.rw{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border-radius :50%;
+  background: #E4E2E2 /*#BCF4C2*/;
+}
